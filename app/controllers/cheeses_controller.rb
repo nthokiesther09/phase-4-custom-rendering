@@ -2,11 +2,11 @@ class CheesesController < ApplicationController
 
   # GET /cheeses
   def index
-    cheeses = Cheese.all
+    cheese = Cheese.all
     render json: cheese
   end
 
-  # GET /cheeses/:id
+  # # GET /cheeses/:id
   def show
    if cheese = Cheese.find_by(id: params[:id])
 
